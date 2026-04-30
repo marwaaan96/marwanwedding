@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marwan & Nourhan | Lifetime Contract</title>
+    <meta
+        name="description"
+        content="A print-ready wedding invitation styled as a lifetime contract for Marwan and Nourhan."
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+    <link id="theme-style" rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="theme-switcher-bar">
+        <label for="theme-select"><span>Theme:</span></label>
+        <select id="theme-select" onchange="switchTheme(this.value)">
+            <option value="styles.css" selected>Classic Elegant</option>
+            <option value="styles-theme2.css">Modern Minimal</option>
+            <option value="styles-theme3.css">Romantic Pastel</option>
+            <option value="styles-theme4.css">Artistic Collage</option>
+            <option value="styles-theme5.css">Modern Editorial (Compact Header)</option>
+            <option value="styles-theme6.css">Futuristic Neon Glassmorphism</option>
+        </select>
+    </div>
+    <main class="invitation-shell">
+        </body>
+        <script>
+        function switchTheme(themeHref) {
+            document.getElementById('theme-style').setAttribute('href', themeHref);
+        }
+        </script>
+        <section class="invitation-card" aria-labelledby="agreement-title">
+            <header class="hero-block">
+                <div class="hero-surface top-right-photo-layout">
+                    <div class="hero-photo-block">
+                        <div class="hero-photo-row" style="display: flex; align-items: center; gap: 1.2rem;">
+                            <figure class="hero-photo-panel" aria-label="Marwan football portrait" style="margin: 0;">
+                                <div class="hero-photo-card is-empty">
+                                    <img
+                                        class="hero-photo-image"
+                                        src="assets/marwan-header.jpg"
+                                        alt="Marwan during his football career"
+                                        hidden
+                                        onload="this.hidden=false;this.parentElement.classList.remove('is-empty');"
+                                        onerror="this.hidden=true;this.parentElement.classList.add('is-empty');"
+                                    >
+                                    <div class="hero-photo-fallback" aria-hidden="true"></div>
+                                </div>
+                            </figure>
+                            <span class="hero-photo-caption" style="white-space: normal; font-size: 1.08rem; color: #b2e6ee; text-shadow: 0 0 8px #00ffe7; max-width: 320px;">
+                                From 12+ years on the pitch to the most meaningful signature of all.
+                            </span>
+                        </div>
+                        </figure>
+                    </div>
+                    <div class="hero-copy-stack">
+                        <p class="hero-kicker">Private and Binding</p>
+                        <p class="eyebrow">Lifetime Partnership Agreement</p>
+                        <h1 id="agreement-title">Marwan <span>&amp;</span> Nourhan</h1>
+                        <p class="hero-copy">
+                            A formal invitation to witness the most meaningful contract ever signed:
+                            a forever agreement powered by love, loyalty, and one extraordinary future.
+                        </p>
+                        <div class="hero-meta">
+                            <aside class="seal-box" aria-label="Event summary">
+                                <p class="seal-label">Effective Date</p>
+                                <p class="seal-value">06.06.2026 <span class="seal-value" style="font-size:inherit; margin-left:0.5em;">At 6:06 PM</span></p>
+                                <p class="seal-venue">Holiday Inn Hotel Maadi</p>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <section class="parties-block" aria-labelledby="parties-title">
+                <div class="section-heading">
+
+                    <h2 id="parties-title">The Contracting Parties</h2>
+                </div>
+                <div class="party-grid">
+                    <article class="party-card">
+                        <div class="party-photo-block">
+                            <img class="party-photo" src="assets/Maro1.jpg.jpeg" alt="Marwan" onerror="this.style.display='none'">
+                        </div>
+                        <div>
+                            <p class="party-role">First Party</p>
+                            <h3>Marwan</h3>
+                            <p>
+                                Former football player for more than 12 years, then a driven media buyer,
+                                followed by three years in brand management, and currently leading as a
+                                Media Buying Team Leader.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="party-card">
+                        <div class="party-photo-block">
+                            <img class="party-photo" src="assets/Maro2.jpg.jpeg" alt="Nourhan" onerror="this.style.display='none'">
+                        </div>
+                        <div>
+                            <p class="party-role">Second Party</p>
+                            <h3>Nourhan</h3>
+                            <p>
+                                The heart of the agreement, the calm in every campaign, and the forever
+                                partner with whom every next chapter becomes worth signing.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="story-block" aria-labelledby="story-title">
+                <div class="section-heading">
+
+                    <h2 id="story-title">Background and Intent</h2>
+                </div>
+                <div class="story-layout">
+                    <div class="story-copy">
+                        <p>
+                            After years of discipline on the field and ambition across the world of
+                            media, Marwan has reached the most valuable milestone of all: a lifetime
+                            agreement with Nourhan.
+                        </p>
+                        <p>
+                            This contract supersedes every previous title, campaign, and achievement,
+                            and marks the official launch of a shared life built on trust, joy,
+                            devotion, and endless growth.
+                        </p>
+                    </div>
+                    <div class="terms-list" role="list" aria-label="Agreement terms">
+                        <div class="term-item" role="listitem">
+                            <p class="term-label">Contract Type</p>
+                            <p class="term-value">Exclusive lifetime partnership</p>
+                        </div>
+                        <div class="term-item" role="listitem">
+                            <p class="term-label">Status</p>
+                            <p class="term-value">Irrevocably celebrated</p>
+                        </div>
+                        <div class="term-item" role="listitem">
+                            <p class="term-label">Benefits Package</p>
+                            <p class="term-value">Love, laughter, support, and forever memories</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="details-block" aria-labelledby="details-title">
+                <div class="section-heading">
+
+                    <h2 id="details-title">Execution Details</h2>
+                </div>
+                <div class="details-grid">
+                    <article class="detail-card">
+                        <p class="detail-label">Date</p>
+                        <p class="detail-value">Saturday, June 6, 2026</p>
+                    </article>
+                    <article class="detail-card">
+                        <p class="detail-label">Time</p>
+                        <p class="detail-value">6:00 PM</p>
+                    </article>
+                    <article class="detail-card">
+                        <p class="detail-label">Venue</p>
+                        <p class="detail-value">Holiday Inn Hotel Maadi</p>
+                        <p class="location-link">
+                            <a href="https://maps.google.com?q=Holiday%20Inn%20%26%20Suites%20Cairo%20Maadi%20by%20IHG,%2029%20A%20Nile%20Corniche,%20Maadi,%20Cairo%20Governorate%2011431&ftid=0x145841dfaf29305d:0xaa67399c83ab1e1b&entry=gps&shh=CAE&lucs=,94297699,94284505,94231188,94280568,47071704,94218641,94282134,94286869&g_st=ic" target="_blank" rel="noopener noreferrer">
+                                📍 View Location on Maps
+                            </a>
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="closing-block" aria-labelledby="closing-title">
+                <div class="closing-copy">
+                    <div class="section-heading">
+
+                        <h2 id="closing-title">Witness the Signing</h2>
+                    </div>
+                    <p>
+                        Your presence is requested to witness the moment this agreement takes effect
+                        and the celebration begins.
+                    </p>
+                    <p>
+                        Join us as Marwan and Nourhan sign for forever and begin a new chapter on
+                        June 6, 2026 at exactly 6:00 PM.
+                    </p>
+                </div>
+            </section>
+
+            <footer class="signature-block">
+                <div class="signature-line">
+                    <p class="signature-name">Marwan</p>
+                    <p class="signature-role">First Party</p>
+                </div>
+                <div class="signature-line">
+                    <p class="signature-name">Nourhan</p>
+                    <p class="signature-role">Second Party</p>
+                </div>
+                <div class="signature-line">
+                    <p class="signature-name">June 6, 2026</p>
+                    <p class="signature-role">Contract Activation Date</p>
+                </div>
+            </footer>
+        </section>
+    </main>
+</body>
+</html>
